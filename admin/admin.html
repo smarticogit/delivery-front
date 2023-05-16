@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css">
+  <script src="./admin.js" defer></script>
+
+  <title>.:CHOCODE ADMIN:.</title>
+</head>
+
+<body>
+  <div class="restaurante">
+    <form action="" class="formLogin center">
+      <h2>Cadastrar Restaurante</h2>
+      <input type="text" class="nome" placeholder="Nome do Restaurante">
+      <input type="text" class="cep" placeholder="CEP">
+      <input type="text" class="logradouro" placeholder="logradouro">
+      <input type="text" class="numero" placeholder="Número" required>
+      <input type="text" class="bairro" placeholder="bairro">
+      <input type="text" class="cidade" placeholder="cidade">
+      <p class="msglogin"></p>
+      <button type="submit" class="btnEntrar center">Cadastrar</button>
+      <div class="confirm" hidden>
+        <textarea name="resposta" id="" cols="30" rows="7"></textarea>
+        <p>O endereço está correto?</p>
+        <button class="btnSim">Sim</button>
+        <button>Não</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkLOtNQ8hu6nNjdXB-zvj6Rn_FzWnZi3E&callback=initMap">
+  </script>
+</body>
+
+</html>

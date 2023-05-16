@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primeira: rgb(240, 10, 10);
+  --sucesso: rgb(150, 228, 154);
+  --erro: rgba(238, 87, 87, 0.402);
+}
+
+.toast {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--erro);
+  color: #fff;
+  padding: 10px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
